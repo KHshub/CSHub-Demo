@@ -1,0 +1,172 @@
+/* Navbar */
+.logo-top {
+    color: #FFFFFF;
+}
+
+header a {
+    color: #FFFFFF;
+}
+
+nav a {
+    color: #FFFFFF;
+}
+
+.header-accent {
+    height: 26em;
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 2em 0em;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+
+/* Course list */
+.courses-section{
+    padding-top: 3rem;
+}
+
+.course-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.course-box {
+    width: 14em;
+    height: 9em;
+    margin: 1.5em;
+    padding: 1.8em;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    color: #434343;
+}
+ .course-box a{
+    color: #434343;
+ }
+
+.course-title {
+    color: #0e0e0e;
+}
+
+.cols {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    text-decoration: none;
+    color: #000000;
+}
+
+.course-box:hover, .course-box:focus{
+    cursor: pointer;
+    background-color: rgba(221, 221, 221, 0.456);
+    /* or  light blue as a hover color*/
+}
+
+.coming-soon {
+    background: rgba(221, 221, 221, 0.676);
+}
+
+.soon {
+    color: #174faf;
+}
+
+.col1 {
+    margin-right: 4em;
+    margin-top: 1em;
+}
+
+.col1 h4, .col1 div {
+    display: inline;
+}
+
+.col1 div {
+    color: #174faf;
+}
+
+.col1 span {
+    color: #2574eb38;
+}
+
+.course-logo {
+    max-width: 6em;
+    max-height: 5em;
+}
+/*
+When screen <= 600px , the courses should be column ordered.
+So each course should be inside a one div that has flex property.
+i think remove (course-row) class .
+
+@media only screen and (max-width: 600px){
+    .courses-section{
+       display: flex;
+       flex-direction: column;
+    }
+}
+*/
+
+/* Coming soon card */
+
+.card {
+    width: 13em;
+    height: 9em;
+    margin: 1.5em;
+    padding: 1.8em;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(215,220,232,1) 0%, rgba(220,224,231,1) 19%, rgba(255,255,255,1) 81%);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    color: #434343;
+}
+.card a{
+    color: rgb(107, 119, 149)
+}
+
+
+
+/*-----------*/
+.card::before {
+    position: absolute;
+    content: '';
+    background: #283593;
+    height: 28px;
+    width: 28px;
+    /* Added lines */
+    top: 2rem;
+    right: -0.5rem;
+    transform: rotate(45deg);
+}
+
+.card::after {
+    position: absolute;
+    content: 'Coming soon';
+    top: 11px;
+    right: -14px;
+    padding: 0.5rem;
+    width: 10rem;
+    background: #3949ab;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+footer {
+    margin-top: 2em;
+}

@@ -1,0 +1,246 @@
+body{
+  font-family: 'Outfit', sans-serif;
+}
+
+
+/* Header */
+
+header {
+  color:#000000;
+  font-family: 'Outfit', sans-serif;
+}
+
+header a {
+  color:#000000;
+}
+
+a{
+  text-decoration: none;
+}
+
+header a:hover{
+  color: #000000
+}
+
+/* Herosec; Q&A intro */
+.heroSec{
+  color:#000000;
+  min-width: 700px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin:  auto;
+  padding: 2rem;
+}
+
+.text-behind{
+  position: relative;
+}
+
+
+.question-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 220px;
+  position: absolute;
+  z-index: -1;
+}
+
+.question-ani {
+  animation: float 4.5s ease-in-out infinite;
+  height:100px;
+  width: 100px;
+  position: relative;
+  opacity: 45%;
+}
+
+@keyframes float {
+  0% {
+      transform: translatey(-25px);
+  }
+
+  50% {
+      transform: translatey(-65px);
+  }
+
+  100% {
+      transform: translatey(-25px);
+  }
+}
+.question2-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  margin-left: 30rem;
+}
+
+.question2-ani {
+  animation: float 5.5s ease-in-out infinite;
+  height: 200px;
+  width: 200px;
+  opacity: 45%;
+  position: relative;
+}
+
+@keyframes float {
+  0% {
+      transform: translatey(-15px);
+  }
+
+  50% {
+      transform: translatey(-65px);
+  }
+
+  100% {
+      transform: translatey(-15px);
+  }
+}
+
+.heroSec h1{
+  font-size: 3rem;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+
+.heroSec p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.header-accent {
+  height:27em;
+  
+}
+
+
+/* Content */
+
+/* Column 1; category menu */
+.column1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.midHeading{
+  font-weight: 300;
+  letter-spacing: .7em;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.midSec {
+  padding: 2em 0em;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:0 auto;
+  /* border: 1px solid aqua; */
+  
+}
+
+.midSec h1 {
+  color: #000000;
+}
+
+.midSec p {
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: .1rem;
+  padding: .5em 2em;
+  color: #000000;
+}
+
+.featureSec{
+  width: 80vw;
+  min-width: 700px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin:0 auto;
+  
+  /* border: 1px solid aqua; */
+  margin-top: 6em;
+}
+
+.featureSec h1{
+  color: #02245E;
+  font-weight: 500;
+  font-size: 2.1rem;
+  margin: 0 auto;
+}
+
+.featureSec p {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+/* Column 2; Comment section */
+textarea {
+  resize: none;
+  font-size: 14px;
+}
+
+/* Modal Window Style */
+
+button:hover {
+  opacity: 1;
+}
+
+.q-btn{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.q-txt{
+  margin-left: 10px;
+  font-size: 16px;
+
+}
+
+img{
+  margin-left: 30px;
+}
+.description{
+  font-size: 14px;
+}
+.contact{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.contact:hover{
+  color: rgb(45, 118, 255);
+}
+
+footer{
+  font-family: 'Outfit', sans-serif;
+}
+
+footer a:hover{
+  color: #000000;
+}

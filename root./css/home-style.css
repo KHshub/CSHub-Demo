@@ -1,0 +1,288 @@
+/* Navbar */
+.logo-top {
+    font-family: 'Outfit', sans-serif;
+}
+
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.nav-item {
+    padding-left: 2em;
+    display: inline;
+}
+
+
+
+
+/* Header */
+header {
+    color: #FFFFFF;
+}
+
+
+header a {
+    color: #FFFFFF
+}
+
+/*      mr robo     */
+.mr-robo-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mr-robo {
+    animation: float 7.5s ease-in-out infinite;
+    height: 100px;
+    width: 200px;
+    border-radius: 20%;
+    position: relative;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-45px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.shadow {
+    background: #76ddf1;
+    z-index: -1;
+    width: 150px;
+    height: 40px;
+    top: 55%;
+    animation: expand 7.5s ease-in-out infinite;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+@keyframes expand {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+}
+
+
+/* Hero Section : intro */
+.heroSec {
+    padding: 4em 0em;
+    width: 80vw;
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 1px solid aqua; */
+}
+
+.heroSec img {
+    width: 30em;
+    height: 32em;
+}
+
+.heroSec h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 auto;
+    color: white;
+}
+
+.heroSec p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.header-accent {
+    background: radial-gradient(#174faf, #162439);
+    position: relative;
+    position: absolute;
+    height: 50em;
+    left: 0px;
+    z-index: -1;
+    top: -88px;
+    right: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* Section 2 : about */
+
+.midHeading {
+    font-weight: 300;
+    letter-spacing: .7em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.midSec {
+    padding: 8em 0em;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 1px solid aqua; */
+    text-align: center;
+    justify-content: center;
+}
+
+.midSec h1 {
+    color: #000000;
+}
+
+.midSec p {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    padding: 1em 2em;
+    color: #000000;
+}
+
+
+
+
+
+
+ /* Third Section : contact  */
+.contactSec {
+    padding-top: 8em;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 1px solid aqua; */
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactBox {
+    margin-top: 2em;
+    background-blend-mode: color;
+    height: 40em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactH1 {
+    font-size: 2.7rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #090213;
+}
+
+.contactBox p {
+    margin-top: 0;
+    letter-spacing: .3em;
+    font-size: 1.2em;
+    color: #090213;
+}
+
+form {
+    margin-top: 3em;
+}
+
+input[type=text],
+input[type=email] {
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1rem;
+    border: none;
+    height: 4em;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    letter-spacing: .1rem;
+    line-height: 1rem;
+    cursor: text;
+}
+
+input[type=text] {
+    width: 11em;
+}
+
+input[type=email] {
+    width: 18em;
+    margin-left: 1em;
+}
+
+
+input[type=email] {
+    align-items: right;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-left: 1rem;
+    cursor: text;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    border: none;
+    width: 10em;
+    height: 3em;
+    font-family: 'Outfit', sans-serif;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transition: .4s;
+}
+
+
+/* responsiveness */
+@media (max-width:1100px){
+    .header-accent {
+
+        height: 70em;
+    }
+
+    .heroSec {
+        flex-direction: column-reverse;
+    }
+}

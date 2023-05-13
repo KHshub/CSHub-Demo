@@ -1,0 +1,270 @@
+/* Layout */
+
+body {
+    margin: auto;
+    padding: 0;
+    background: #FFFFFF;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    /* border: solid .1em pink; */
+    width: 90vw;
+    padding: 0em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+}
+
+button {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    transition: 0.4s;
+}
+
+button a {
+    color: #FFFFFF;
+}
+
+.spacer {
+    width: 8em;
+}
+
+.spacer2 {
+    height: 1.5em;
+}
+
+.spacer-height {
+    height: 8em;
+}
+
+.mini-spacer {
+    height: 4em;
+}
+
+.mini-spacer-w {
+    width: 4em;
+}
+
+
+
+
+/* Preset Styles */
+.button1-style {
+    margin-left: 2px;
+    border-radius: 10px;
+    border: none;
+    width: 12em;
+    height: 4em;
+    font-size: 0.8rem;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1rem;
+    cursor: pointer;
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+
+.button1-style:hover,
+.button1-style:focus {
+    background-color: #17387e;
+}
+
+
+.button2-style {
+    margin-left: 2px;
+    border-radius: 10px;
+    border: none;
+    width: 12em;
+    height: 4em;
+    font-size: 0.8rem;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1rem;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #6b96f2;
+}
+
+.button2-style:hover,
+.button2style:focus {
+    background-color: #17387e;
+}
+
+.button3-style {
+    margin-left: 2px;
+    border-radius: 10px;
+    border: none;
+    height: 2em;
+    width: 6em;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+
+.button3-style:hover,
+.button3-style:focus {
+    background-color: #071b47;
+}
+
+.sec-bg-dark {
+    background: radial-gradient(#174faf, #162439);
+}
+
+.sec-bg-light {
+    background: radial-gradient(#2574eb38, #d9d9d900);
+}
+
+.header-accent {
+    position: relative;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    top: -88px;
+    right: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+/* Header */
+
+header {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    /* border: solid .1em aqua; */
+    width: 80vw;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+.logo-top {
+    margin: 0 auto;
+    margin-left: 0ch;
+}
+
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    font-size: 1.2rem;
+}
+
+nav {
+    /* border: solid .1em yellow; */
+    margin: 0 auto;
+    padding: 0;
+    padding-right: 0;
+    margin-right: 0;
+    align-content: right;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: rows;
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 3em;
+    padding-right: 0;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0 auto;
+}
+
+.navitems {
+    padding-left: 2em;
+    font-size: 1.1em;
+}
+
+
+
+/* Footer */
+
+.footerSec {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    right: 0em;
+    /* border: 1px solid blue; */
+}
+
+.footerSec a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-bottom {
+    color: #000000;
+    margin: 0 auto;
+    margin-left: 0;
+    font-size: 1rem;
+    margin-right: 8em;
+    cursor: pointer;
+}
+
+.logo-bottom a {
+    color: #000000;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 0;
+    padding-right: 0;
+    margin-right: 0;
+    letter-spacing: .1rem;
+
+}
+
+.footerNav a {
+    margin-left: 4em;
+    color: #000000;
+    font-size: 1rem;
+
+}
+
+.footerCol2 h3 {
+    font-size: .75rem;
+    font-weight: 400;
+
+}
+
+.dark-text {
+    color: #000000;
+}

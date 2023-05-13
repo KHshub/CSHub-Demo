@@ -1,0 +1,276 @@
+/* Header */
+a{
+    text-decoration: none;
+}
+
+header {
+    font-family: 'Outfit', sans-serif;
+    color: #FFFFFF;
+}
+
+header a {
+    color: #FFFFFF;
+}
+
+header a:hover, a:focus {
+    color: #FFFFFF;
+}
+
+
+/* Hero Section : intro */
+.heroSec {
+    color: #000000;
+    padding: 6em 0em;
+    width: 80vw;
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+
+    /* border: 1px solid aqua; */
+}
+
+a {
+    color: white;
+}
+
+.heroSec img {
+    width: 28em;
+    height: 30em;
+}
+
+.heroSec h1 {
+    font-size: 4rem;
+    margin: 0 auto;
+
+}
+
+.heroSec p {
+    font-size: 1rem;
+    font-weight: 200;
+
+}
+
+.header-accent {
+    height: 38em;
+}
+
+
+
+
+
+/* Featuers Intro */
+/* Section 2 : Features Description */
+
+
+.midHeading {
+    font-weight: 300;
+    letter-spacing: .7em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.midSec {
+    padding: 5em 0em;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 1px solid aqua; */
+    text-align: center;
+    justify-content: center;
+}
+
+.midSec h1 {
+    color: #000000;
+}
+
+.midSec p {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    padding: .5em 2em;
+    color: #000000;
+}
+
+
+
+
+/* Feature Section */
+.featureSec {
+    width: 80vw;
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+    /* border: 1px solid aqua; */
+    margin-top: 6em;
+}
+
+
+.featureSec img {
+    width: 23em;
+    height: 23em;
+}
+
+.featureSec h1 {
+    color: #02245E;
+    font-weight: 500;
+    font-size: 2.1rem;
+    margin: 0 auto;
+}
+
+.featureSec p {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+
+
+/* Meet the devs section */
+.devs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dev-socials {
+    width: 26px;
+    height: 26px;
+}
+
+.content {
+    position: relative;
+    animation: animatop 0.9s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;
+}
+
+.card {
+    width:300px;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 230px;
+    background: #ddd;
+    position: absolute;
+    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 1s both;
+}
+
+.badgescard {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #0976b4;
+    color:#fff;
+    width: 280px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+    animation: animainfos 0.5s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.75s forwards;
+}
+
+.badgescard span {
+    font-size: 1.6em;
+    margin: 0px 6px;
+    opacity: 0.6;
+}
+
+.firstinfo {
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+}
+
+.firstinfo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.firstinfo .profileinfo {
+    padding: 0px 20px;
+}
+
+.firstinfo .profileinfo h1 {
+    font-size: 1.4rem;
+}
+
+.firstinfo .profileinfo h3 {
+    font-size: 1rem;
+    color: #0976b4;
+}
+
+.firstinfo .profileinfo p.bio {
+    padding: 10px 0px;
+    color: #000000;
+    line-height: 1.2;
+    font-size: 0.8rem;
+    font-style: initial;
+}
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        bottom: -500px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+    100% {
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}
+
+
+/* footer */
+footer a:hover, a:focus {
+    color: #000000;
+}
