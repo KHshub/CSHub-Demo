@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout-style.css">
+    <link rel="stylesheet" href="../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>Quiz template</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="currentPage navitems">home</a></li>
+                    <li><a href="about-us.html" class="aboutPage navitems">about</a></li>
+                    
+                    <li><a href="courses.html" class="coursesPage navitems">courses</a></li>
+                    <li><a href="login.html" class="loginPage navitems">login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- menu 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Chapter 1: Title</summary>
+                                <div onclick="location.href='../pages/home.html'" class="menu-item">1.1 Lorem ipsum
+                                    dolor sit amet, consectetur adipiscing elit? </div>
+                                <div onclick="" class="menu-item">1.2 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.?</div>
+                                <div onclick="" class="menu-item">1.3 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.?</div>
+                                <div onclick="" class="menu-item">1.4 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.?</div>
+                            </details>
+                        </div>
+                        <!-- menu 2 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Chapter 2: Title</summary>
+                                <div onclick="" class="menu-item">1.1 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit? </div>
+                                <div onclick="" class="menu-item">1.2 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.?</div>
+                                <div onclick="" class="menu-item">1.3 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.?</div>
+                                <div onclick="" class="menu-item">1.4 Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.?</div>
+                            </details>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <div class="quiz-header">
+                                <h1>Quiz | Chapter 1: Title of This Chapter</h1>
+                            </div>
+                            <br><br>
+
+                            <div class="displayend"></div>
+                            <div id="quiz">
+                                <div id="counter">
+                                    <h4 class="quiz-num" id="progress"></h4>
+                                </div>
+                                <h2 id="question"></h2>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="a" name="answer" class="answer">
+                                        <label for="a" id="a1"></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="b" name="answer" class="answer">
+                                        <label for="b" id="b1"></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="c" name="answer" class="answer">
+                                        <label for="c" id="c1"></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="d" name="answer" class="answer">
+                                        <label for="d" id="d1"></label>
+                                    </li>
+                                </ul>
+
+                                <div class="mini-spacer"></div>
+                                <button id="next" class="button1-style">Next</button>
+                            </div>
+
+                            <script>
+                                /*data inside and correct answer*/
+                                const quizdata = [
+                                    {
+                                        question: "What is the color of the sky?",
+                                        a: "blue",
+                                        b: "red",
+                                        c: "white",
+                                        d: "green",
+                                        correct: "a",
+                                    },
+                                    {
+                                        question: "What is the color of the sky?",
+                                        a: "blue",
+                                        b: "red",
+                                        c: "white",
+                                        d: "green",
+                                        correct: "a",
+                                    },
+                                ];
+                                /*grabing informations and assigning*/
+                                var quiz = document.getElementById('quiz')
+                                var Choices = document.querySelectorAll('.answer')
+                                var question = document.getElementById('question')
+                                var a1 = document.getElementById('a1')
+                                var b1 = document.getElementById('b1')
+                                var c1 = document.getElementById('c1')
+                                var d1 = document.getElementById('d1')
+                                var next = document.getElementById('next')
+                                var progress = document.getElementById('progress')
+
+                                /*var criclecount = document.getElementById('spans')*/
+                                let p = 1
+                                let i = 0
+                                let score = 0
+                                /*loading informations into thingy*/
+                                load()
+                                function load() {
+                                    progress.innerText = ` Question Number ${p}/${quizdata.length} `
+                                    uncheckradio()
+                                    const data = quizdata[i]
+                                    question.innerText = data.question
+                                    a1.innerText = data.a
+                                    b1.innerText = data.b
+                                    c1.innerText = data.c
+                                    d1.innerText = data.d
+                                }
+                                anw = []
+                                /*select anwser*/
+                                function Selectanwser() {
+                                    for (var k = 0; k < Choices.length; k++) {
+                                        var radio = Choices[k];
+                                        if (radio.checked) {
+                                            ans = radio.id
+                                            anw.push(radio.id)
+                                        }
+                                    }
+                                    return ans
+                                }
+
+                                /*add score and load quiz */
+                                next.addEventListener('click', () => {
+                                    const answer = Selectanwser()
+                                    if (answer) {
+                                        if (answer === quizdata[i].correct) {
+                                            score++
+                                        }
+                                        p++
+                                        i++
+                                        if (i < quizdata.length) {
+                                            load()
+                                        } else {
+                                            q()
+                                            quiz.innerHTML = `<h2>anwser ${score}/${quizdata.length}</h2><button onclick="location.reload()" class="button1-style">Restart</button>`
+                                        }
+                                    }
+                                })
+                                function uncheckradio() {
+                                    for (var j = 0; j < Choices.length; j++) {
+                                        var radio = Choices[j];
+                                        radio.checked = false;
+                                    }
+                                }
+                                const displayend = document.getElementsByClassName('displayend')[0]
+                                function q() {
+                                    for (let u = 0; u < quizdata.length; u++) {
+                                        let qdata = quizdata[u]
+                                        let item = document.createElement('h2')
+                                        let space = document.createElement('br')
+                                        let rad1 = document.createElement('h4')
+                                        let rad2 = document.createElement('h4')
+                                        let rad3 = document.createElement('h4')
+                                        let rad4 = document.createElement('h4')
+                                        let rad = document.createElement('h3')
+                                        let radd = document.createElement('h3')
+                                        let itemtext = document.createTextNode(`${qdata.question}`)
+                                        let itemtext1 = document.createTextNode(`${qdata.a}`)
+                                        let itemtext2 = document.createTextNode(`${qdata.b}`)
+                                        let itemtext3 = document.createTextNode(`${qdata.c}`)
+                                        let itemtext4 = document.createTextNode(`${qdata.d}`)
+                                        let itemtext5 = document.createTextNode(`${qdata.correct}`)
+                                        let itemtext6 = document.createTextNode(`${anw[u]}`)
+                                        radd.innerHTML = "Selected Answer: "
+                                        rad.innerHTML = "Correct Answer: "
+                                        item.appendChild(itemtext)
+                                        rad1.appendChild(itemtext1)
+                                        rad2.appendChild(itemtext2)
+                                        rad3.appendChild(itemtext3)
+                                        rad4.appendChild(itemtext4)
+                                        rad.appendChild(itemtext5)
+                                        radd.appendChild(itemtext6)
+                                        displayend.appendChild(item)
+                                        displayend.appendChild(rad1)
+                                        displayend.appendChild(rad2)
+                                        displayend.appendChild(rad3)
+                                        displayend.appendChild(rad4)
+                                        /*display the anwser that been put*/
+                                        displayend.appendChild(radd)
+                                        /*display the actual anwser*/
+                                        displayend.appendChild(rad)
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+            <footer>
+                <div class="logo-bottom">
+                    <div class="footerCol1">
+                        <h3><a>CS Hub</a></h3>
+                    </div>
+                </div>
+                <div class="footerNav">
+                    <div class="footerCol2">
+                        <h3><a href="#">home</a></h3>
+                    </div>
+
+                    <div class="footerCol2">
+                        <h3><a href="about-us.html">about us</a></h3>
+                    </div>
+
+                    <div class="footerCol2">
+                        <h3><a href="Q&A.html">Q&A</a></h3>
+                    </div>
+
+                    <div class="footerCol2">
+                        <h3><a href="courses.html">courses</a></h3>
+                    </div>
+
+                    
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
