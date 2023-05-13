@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout-style.css">
+    <link rel="stylesheet" href="../css/home-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <script type="module" src="../scripts/logout.js"></script>
+    <title>home</title>
+    <script type="module" src="../scripts/login.js"></script>
+</head>
+
+<body>
+    <div class="header-accent sec-bg-dark"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="currentPage navitems">home</a></li>
+                    <li><a href="about-us.html" class="aboutPage navitems">about</a></li>
+                    <li><a class="aboutPage navitems" href="courses.html">courses</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Hero Section : intro -->
+        <div class="heroSec">
+            <div class="Col1">
+                <h1>Welcome to<br>CS Hub.</h1>
+                <br><br><br><br>
+                <div class="introbuttons">
+                    <button class="button1-style" onclick="location.href='about-us.html'">LEARN MORE</button>
+                    <button class="button2-style" onclick="location.href='courses.html'">EXPLORE COURSES</button>
+                </div>
+            </div>
+
+            <div class="mini-spacer-w"></div>
+
+            <div class="Col2">
+                <div class="mr-robo-animation">
+                    <img src="../assets/images/mr-robo.png" alt="a cute robot floating" class="mr-robo">
+                    <div class="shadow"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Section : About Us -->
+    <div class="midSec">
+        <h3 class="midHeading">ABOUT US</h3>
+        <p>CS Hub was created by Computer Science students, to help anyone interested in learning more about CS fields.
+            The course list was curated with JIC's Computer Science degree plan in mind, so it can be very beneficial
+            for CS students specifically, but anyone is welcome! </p>
+        <button class="button1-style" onclick="location.href='about-us.html'">LEARN MORE</button>
+    </div>
+
+    <!-- Section : contact -->
+    <div class="contactSec" id="contact_us_section">
+        <div class="contactBox card sec-bg-light">
+            <h1 class="contactH1">want to reach out?</h1>
+            <p>send us an email, and get in touch</p>
+
+            <div class="formContent">
+                <img src="../assets/images/email.png" width="400">
+
+                <form method=POST action="mailto:cshub.support@gmail.com" id="contact-form" enctype="text/plain">
+                    <input type="text" placeholder="Your name" id="name" required>
+                    <input type="email" placeholder="example@mail.com" name="emailid" id="email" required>
+                    <br>
+                    <textarea placeholder="Write your message here.." id="msgContent" rows="8" cols="50"
+                        required></textarea>
+                    <br>
+                    <input class="button2-style" type="submit" value="SEND">
+                </form>
+            </div>
+            <!-- Footer -->
+            <div class="footerSec">
+                <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a>CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="home.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="about-us.html">about us</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
