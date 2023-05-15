@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout-style.css">
+    <link rel="stylesheet" href="../css/FAQ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap CDN:  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Q&A Space</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="currentPage navitems">home</a></li>
+                    <li><a href="about-us.html" class="aboutPage navitems">about</a></li>
+                    <li><a href="courses.html" class="coursesPage navitems">courses</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section ; Learn more -->
+        <div class="header-accent"></div>
+        <div class="heroSec">
+            <div class="Col1">
+                <div class="text-behind">
+                    <h1>FAQs</h1>
+                    <div class="spacer2"></div>
+                    <div class=" text-secondary">
+                        <h4>
+                            Have a question? We're here to help.
+                        </h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Col1">
+                <img src="../assets/images/FAQ.png" width="600">
+            </div>
+        </div>
+        <div class="spacer2"></div>
+
+        <!-- Q&A Space -->
+        <div class="container-fluid ">
+            <div class="row justify-content-center">
+                <div class="col-xl-11">
+                    <div class="d-grid gap-4 text-left">
+
+                        <!-- Buttons trigger collapse -->
+                        <button class="q-btn text-left" data-bs-toggle="collapse" href="#q1" role="button" aria-expanded="false"
+                            aria-controls="q1">
+                            Are courses free?
+                            <img src="../assets/images/down-arrow.png" width="30" class="float-end">
+                        </button>
+
+                        <!-- Collapsed content -->
+                        <div class="collapse mt-2 q-txt" id="q1">
+                            Yes, all courses are free.
+                        </div>
+                        
+                        <!-- Buttons trigger collapse -->
+                        <button class="q-btn" data-bs-toggle="collapse" href="#q2" role="button" aria-expanded="false"
+                            aria-controls="q2">
+                            Are there going to be more courses in the future?
+                            <img src="../assets/images/down-arrow.png" width="30" class="float-end">
+                        </button>
+
+                        <!-- Collapsed content -->
+                        <div class="collapse mt-2 q-txt" id="q2">
+                            Yes, we will be adding more courses in the future!
+                        </div>
+
+                        <!-- Buttons trigger collapse -->
+                        <button class="q-btn" data-bs-toggle="collapse" href="#q3" role="button" aria-expanded="false"
+                            aria-controls="q3">
+                            Do I need an account to view the courses?
+                            <img src="../assets/images/down-arrow.png" width="30" class="float-end">
+                        </button>
+
+                        <!-- Collapsed content -->
+                        <div class="collapse mt-2 q-txt" id="q3">
+                            No, you don't! The courses are readily avaiable to unregistered users.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer2"></div>
+        </div>
+        <div class="text-center" style="padding-top: 3rem;">
+            <h5>Still have questions?</h5>
+            <p class="description">Can't find the answer you're looking for? Please <a href="../pages/home.html#contact_us_section" class="contact">contact us!</a></p>
+        </div>
+        <div class="spacer-height"></div>
+        
+        <!-- Footer -->
+        <div class="footerSec">
+            <footer>
+                <div class="logo-bottom">
+                    <div class="footerCol1">
+                        <h3><a>CS Hub</a></h3>
+                    </div>
+                </div>
+                <div class="footerNav">
+                    <div class="footerCol2">
+                        <h3><a href="home.html">home</a></h3>
+                    </div>
+
+                    <div class="footerCol2">
+                        <h3><a href="about-us.html">about us</a></h3>
+                    </div>
+
+                    <div class="footerCol2">
+                        <h3><a href="courses.html">courses</a></h3>
+                    </div>
+
+                    <div class="footerCol2">
+                        <h3><a href="faq.html">FAQ</a></h3>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- JavaScript Bootstrap CDN:  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
